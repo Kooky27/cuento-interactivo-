@@ -1,0 +1,330 @@
+.edith1 {
+  color: #ffffff;
+  font-weight: bold;
+}
+.edith2 {
+  color: #eae0e4;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.edith3 {
+  color: #eae0e4;
+  font-weight: bold;
+}
+
+.editp {
+  color: #eae0e4;
+  margin-right: 10%;
+  margin-left: 10%;
+  text-align: justify;
+  font-size: 20px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Establece la altura del contenedor al 100% del viewport height */
+    overflow: hidden; /* Evita que la imagen se desborde del contenedor */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.banner img {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Establece la altura de la imagen al 100% del contenedor */
+    object-fit: cover; /* Escala la imagen para que cubra completamente el contenedor */
+}
+
+.banner h1{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.banner h2{
+  position: absolute;
+  top: 52%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.banner a{
+  text-decoration: none;
+  color: black;
+  
+}
+
+.cajitaA:hover{
+  transform: scale(1.2);
+}
+
+.cajitaA{
+  transition: 300ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 90%;
+  width: 40px;
+  height: 40px;
+  font-size: 60px;
+}
+
+
+.header {
+  display: flex;
+  background-color: beige;
+  align-items: center;
+  height: 10vh;
+}
+
+.dropdown {
+  display: block; 
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.dropdown-menu a {
+  color: #04373B; 
+}
+
+.menugrande {
+  display: none;  /* Oculta el menu pequeño */
+}
+
+.s1, .s3, .s5 { /*ponerlos asi para modificar los aspectos comunes de las clases más facilmente*/
+  background-color: #842233;
+}
+
+.s2, .s4 { 
+  background-color: #04373B;
+}
+
+.main{
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.s1{/*Sección que engloba todo el primer contenido*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.s1 aside{ /*Contedor lateral en el cual pondremos el logo, informacion, etc.*/
+  margin: 40px;
+
+}
+
+.s1 aside img{ /*modificaciones de la imagen del contenedor aside*/
+    max-width: 60vw;
+}
+
+.s2{
+  height: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.s3{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.s3 aside{
+  margin: 5px;
+}
+
+.s3 aside img{
+  max-width: 60vw;
+}
+
+.Nombres{
+  margin-bottom: 15px;
+}
+
+.s4{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.s4 a {
+  color: inherit; /*cambia el color de los enlaces por el mismo que el del texto que tiene su contenedor */
+}
+.s4 aside{
+  margin: 60px;
+}
+
+.s4 aside img{
+  max-width: 60vw;
+}
+
+#carouselExample {
+  width: 300px; /* Ancho fijo del carousel */
+  height: 300px; /* Alto fijo del carousel */
+  overflow: hidden; /* Para ocultar las partes de las imágenes que están fuera del carousel */
+}
+
+.carousel-inner {
+  width: 100%; /* Ancho del contenedor interno igual al del carousel */
+  height: 100%; /* Alto del contenedor interno igual al del carousel */
+}
+
+.carousel-item img {
+  width: 100%; /* Para asegurar que las imágenes ocupen el 100% del ancho del contenedor interno */
+  height: 100%; /* Para asegurar que las imágenes ocupen el 100% del alto del contenedor interno */
+  object-fit: cover; /* Para asegurar que las imágenes se ajusten y cubran completamente el contenedor sin distorsiones */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.sfooter{ 
+  display: flex;
+  color:#ffffff;
+  background-color: #010909;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.mapafooter{
+  list-style-type: none;
+  margin-top: 20px;
+  margin: 0;
+  padding: 1rem;
+}
+
+.copyright{
+  color: #eae0e4;
+  text-align: justify;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+  font-size: 10px;
+}
+
+/* Media query para pantallas más grandes */
+@media (min-width: 450px){
+.editp{
+  color: #eae0e4;
+  margin-right: 10%;
+  margin-left: 10%;
+  text-align: justify;
+  font-size: 25px;
+}
+
+.sfooter{ 
+  display: flex;
+  color:#ffffff;
+  background-color: #010909;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.mapafooter{
+  list-style-type: none;
+  margin-top: 20px;
+  margin: 0;
+  padding: 1rem;
+}
+  }
+
+
+/* Media query para pantallas aún más grandes */
+@media (min-width: 1024px) {
+
+ .s1, .s4 {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Divide en dos columnas de igual ancho */
+    grid-column-gap: 20px; /* Espacio entre columnas */
+    align-items: center; /* Centra los elementos verticalmente */
+  }
+
+  .s3 {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Divide en dos columnas de igual ancho */
+    grid-column-gap: 20px; /* Espacio entre columnas */
+    align-items: center; /* Centra los elementos verticalmente */
+  }
+  .s1 aside, .s4 aside{
+    order: 2; /*cambiar el orden en el que */
+  }
+  .s3 aside img{
+    max-width: 30vw;
+  }
+
+  .menugrande {
+    display: block; /* muestra el menu horizontal */
+    background-color: #842233;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+  }
+
+  .menugrande a{
+    color: inherit;
+  }
+
+  .menugrande a:visited {
+    color: #ffffff;
+  }
+  .dropdown {
+    display: none;  /* Oculta el menu pequeño */
+  }
+
+  #carouselExample{
+    margin: 40px;
+    max-width: 40vw;
+  }
+
+  .sfooter{ 
+    display: flex;
+    color:#ffffff;
+    background-color: #010909;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .mapafooter{
+    list-style-type: none;
+    margin-top: 20px;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .s1 aside img, .s3 aside img, .s4 aside img{ /*modificaciones de la imagen del contenedor aside*/
+    max-width: 30vw;
+  }
+
+}
